@@ -1,6 +1,5 @@
-require "daily_meals/version"
+require_relative "../config/environment.rb"
 
-module DailyMeals
-  class Error < StandardError; end
-  # Your code goes here...
-end
+
+
+
