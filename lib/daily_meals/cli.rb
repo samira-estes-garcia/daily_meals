@@ -6,11 +6,14 @@ class CLI
 
     def main_menu
         puts " "
-        puts "************************************************************************************************************************"
+        puts "********************************************************************************"
         puts " "
-        puts 'Welcome to Daily Meals!'.colorize(:light_blue)
+        puts 'Welcome to Daily Meals!'.center(85).colorize(:light_blue)
+        puts "********************************************************************************"
         puts " "
-        puts 'Please select an option to find recipes to cook! Type "menu" to access the main menu or type "exit" to exit the program.'
+        puts 'Please select an option to find recipes to cook!'.colorize(:light_blue)
+        puts "Type".colorize(:light_blue) + " menu ".colorize(:red) + "to access the main menu or".colorize(:light_blue) + " exit ".colorize(:red) + "to exit the program.".colorize(:light_blue)
+        puts " "
 
         puts "1. Breakfast"
         puts "2. Lunch"
@@ -18,7 +21,7 @@ class CLI
         puts "4. Snack"
         
         puts " "
-        puts "Enter Choice Number: "
+        puts "Enter Choice Number: ".colorize(:light_blue)
         puts " "
 
         choice = nil
@@ -27,22 +30,26 @@ class CLI
             case choice
             when "1"
                 puts " "
-                puts "Select a number to display ingredients and a link to the recipe. Type back to go back to the breakfast menu or exit to access the main menu.".colorize(:light_blue)
+                puts "Select a number to display ingredients and a link to the recipe.".colorize(:light_blue)
+                puts "Type".colorize(:light_blue) + " back ".colorize(:red) + "to to the dinner menu or" + " exit ".colorize(:red) + "to access the main menu.".colorize(:light_blue)
                 puts " "
                 self.breakfast_recipes
             when "2"
                 puts " "
-                puts "Select a number to display ingredients and a link to the recipe. Type back to go back to the lunch menu or exit to access the main menu.".colorize(:light_blue)
+                puts "Select a number to display ingredients and a link to the recipe.".colorize(:light_blue)
+                puts "Type".colorize(:light_blue) + " back ".colorize(:red) + "to to the lunch menu or".colorize(:light_blue) + " exit ".colorize(:red) + "to access the main menu.".colorize(:light_blue)
                 puts " "
                 self.lunch_recipes
             when "3"
                 puts " "
-                puts "Select a number to display ingredients and a link to the recipe. Type back to go back to the dinner menu or exit to access the main menu.".colorize(:light_blue)
+                puts "Select a number to display ingredients and a link to the recipe.".colorize(:light_blue)
+                puts "Type".colorize(:light_blue) + " back ".colorize(:red) + "to to the dinner menu or".colorize(:light_blue) + " exit ".colorize(:red) + "to access the main menu.".colorize(:light_blue)
                 puts " "
                 self.dinner_recipes
             when "4"
                 puts " "
-                puts "Select a number to display ingredients and a link to the recipe. Type back to go back to the snack menu or exit to access the main menu.".colorize(:light_blue)
+                puts "Select a number to display ingredients and a link to the recipe.".colorize(:light_blue)
+                puts "Type".colorize(:light_blue) + " back ".colorize(:red) + "to go back to the snack menu or".colorize(:light_blue) + " exit ".colorize(:red) + "to access the main menu.".colorize(:light_blue)
                 puts " "
                 self.snack_recipes
             when "menu"
@@ -51,13 +58,17 @@ class CLI
         end 
 
         if choice == "exit"
-            puts "Thank you for using Daily Meals. Happy Cooking!"
+            puts " "
+            puts "Thank you for using Daily Meals. Happy Cooking!".colorize(:light_blue)
+            puts " "
         end
     end
 
     #breakfast
     def breakfast_recipes 
         API.get_breakfast_recipes
+        puts "Breakfast Recipe Titles".colorize(:green)
+        puts " "
         puts API.get_breakfast_titles
         puts " "
         self.breakfast_details
@@ -74,9 +85,11 @@ class CLI
             case breakfast_input
             when "1"
                 puts " "
-                puts "Recipe Name: #{recipes[0][3..-1]}"
-                puts ingredients[0]
-                puts recipe_url[0]
+                puts "Recipe Name:".colorize(:green) + " #{recipes[0][3..-1]}"
+                puts "Ingredients:".colorize(:green) + " #{ingredients[0]}"
+                puts "Recipe Link:".colorize(:green) + " #{recipe_url[0]}"
+                puts " "
+                puts "Type back to go back to the breakfast menu, or exit to access the main menu".colorize(:light_blue)
                 puts " "
             when "2"
                 puts " "
@@ -136,6 +149,7 @@ class CLI
         end
 
         if breakfast_input == "back" 
+            puts " "
             self.breakfast_recipes
         else breakfast_input == "exit"
             self.start
@@ -146,7 +160,10 @@ class CLI
     #lunch
     def lunch_recipes 
         API.get_lunch_recipes
-        puts API.get_lunch_titles 
+        puts "Lunch Recipe Titles".colorize(:green)
+        puts " "
+        puts API.get_lunch_titles
+        puts " " 
         self.lunch_details
     end
 
@@ -222,7 +239,8 @@ class CLI
             end
         end
 
-        if lunch_input == "back" 
+        if lunch_input == "back"
+            puts " " 
             self.lunch_recipes
         else lunch_input == "exit"
             self.start
@@ -233,7 +251,10 @@ class CLI
     #dinner
     def dinner_recipes 
         API.get_dinner_recipes
+        puts "Dinner Recipe Titles".colorize(:green)
+        puts " "
         puts API.get_dinner_titles
+        puts " "
         self.dinner_details 
     end
 
@@ -247,49 +268,70 @@ class CLI
             dinner_input = gets.strip
             case dinner_input
             when "1"
+                puts " "
                 puts "Recipe Name: #{recipes[0][3..-1]}"
                 puts ingredients[0]
                 puts recipe_url[0]
+                puts " "
             when "2"
+                puts " "
                 puts "Recipe Name: #{recipes[1][3..-1]}"
                 puts ingredients[1]
                 puts recipe_url[1]
+                puts " "
             when "3"
+                puts " "
                 puts "Recipe Name: #{recipes[2][3..-1]}"
                 puts ingredients[2]
                 puts recipe_url[2]
+                puts " "
             when "4"
+                puts " "
                 puts "Recipe Name: #{recipes[3][3..-1]}"
                 puts ingredients[3]
                 puts recipe_url[3]
+                puts " "
             when "5"
+                puts " "
                 puts "Recipe Name: #{recipes[4][3..-1]}"
                 puts ingredients[4]
                 puts recipe_url[4]
+                puts " "
             when "6"
+                puts " "
                 puts "Recipe Name: #{recipes[5][3..-1]}"
                 puts ingredients[5]
                 puts recipe_url[5]
+                puts " "
             when "7"
+                puts " "
                 puts "Recipe Name: #{recipes[6][3..-1]}"
                 puts ingredients[6]
                 puts recipe_url[6]
+                puts " "
             when "8"
+                puts " "
                 puts "Recipe Name: #{recipes[7][3..-1]}"
                 puts ingredients[7]
                 puts recipe_url[7]
+                puts " "
             when "9"
+                puts " "
                 puts "Recipe Name: #{recipes[8][3..-1]}"
                 puts ingredients[8]
                 puts recipe_url[8]
+                puts " "
             when "10"
+                puts " "
                 puts "Recipe Name: #{recipes[9][3..-1]}"
                 puts ingredients[9]
                 puts recipe_url[9]
+                puts " "
             end
         end
 
         if dinner_input == "back" 
+            puts " "
             self.dinner_recipes
         else dinner_input == "exit"
             self.start
@@ -300,7 +342,10 @@ class CLI
     #snack
     def snack_recipes 
         API.get_snack_recipes
+        puts "Snack Recipe Titles".colorize(:green)
+        puts " "
         puts API.get_snack_titles
+        puts " "
         self.snack_details 
     end
 
@@ -314,49 +359,70 @@ class CLI
             snack_input = gets.strip
             case snack_input
             when "1"
+                puts " "
                 puts "Recipe Name: #{recipes[0][3..-1]}"
                 puts ingredients[0]
                 puts recipe_url[0]
+                puts " "
             when "2"
+                puts " "
                 puts "Recipe Name: #{recipes[1][3..-1]}"
                 puts ingredients[1]
                 puts recipe_url[1]
+                puts " "
             when "3"
+                puts " "
                 puts "Recipe Name: #{recipes[2][3..-1]}"
                 puts ingredients[2]
                 puts recipe_url[2]
+                puts " "
             when "4"
+                puts " "
                 puts "Recipe Name: #{recipes[3][3..-1]}"
                 puts ingredients[3]
                 puts recipe_url[3]
+                puts " "
             when "5"
+                puts " "
                 puts "Recipe Name: #{recipes[4][3..-1]}"
                 puts ingredients[4]
                 puts recipe_url[4]
+                puts " "
             when "6"
+                puts " "
                 puts "Recipe Name: #{recipes[5][3..-1]}"
                 puts ingredients[5]
                 puts recipe_url[5]
+                puts " "
             when "7"
+                puts " "
                 puts "Recipe Name: #{recipes[6][3..-1]}"
                 puts ingredients[6]
                 puts recipe_url[6]
+                puts " "
             when "8"
+                puts " "
                 puts "Recipe Name: #{recipes[7][3..-1]}"
                 puts ingredients[7]
                 puts recipe_url[7]
+                puts " "
             when "9"
+                puts " "
                 puts "Recipe Name: #{recipes[8][3..-1]}"
                 puts ingredients[8]
                 puts recipe_url[8]
+                puts " "
             when "10"
+                puts " "
                 puts "Recipe Name: #{recipes[9][3..-1]}"
                 puts ingredients[9]
                 puts recipe_url[9]
+                puts " "
             end
         end
 
         if snack_input == "back" 
+            puts " "
             self.snack_recipes
         else snack_input == "exit"
             self.start

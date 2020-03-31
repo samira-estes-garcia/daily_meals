@@ -20,11 +20,11 @@ def self.recipe_title(api_hash)
 end
 
 def self.recipe_ingredients(api_hash)
-    ingredients = api_hash.collect { |element| "Ingredients: #{element['ingredients']}" }
+    ingredients = api_hash.collect { |element| element['ingredients'] }
 end
 
 def self.recipe_urls(api_hash)
-    recipe_urls = api_hash.collect { |element| "Recipe Link: #{element['href']}" }
+    recipe_urls = api_hash.collect { |element| element['href'] }
 end
 
 def self.all
