@@ -14,7 +14,17 @@ end
 
 def self.recipe_title(api_hash)
     titles = api_hash.collect { |element| element['title'] }
-    titles.each.with_index(1) {|title, index| puts "#{index}. #{title}" }
+    title_array = []
+    titles.each.with_index(1) {|title, index| title_array << "#{index}. #{title}" }
+    title_array
+end
+
+def self.recipe_ingredients(api_hash)
+    ingredients = api_hash.collect { |element| "Ingredients: #{element['ingredients']}" }
+end
+
+def self.recipe_urls(api_hash)
+    recipe_urls = api_hash.collect { |element| "Recipe Link: #{element['href']}" }
 end
 
 def self.all

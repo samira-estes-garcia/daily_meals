@@ -1,6 +1,6 @@
 require 'httparty'
 require 'pry'
-require 'json'
+require 'colorize'
 
 #require_relative file that live in app
 require_relative "../lib/daily_meals/api"
