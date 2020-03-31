@@ -31,7 +31,7 @@ class CLI
             when "1"
                 puts " "
                 puts "Select a number to display ingredients and a link to the recipe.".colorize(:light_blue)
-                puts "Type".colorize(:light_blue) + " back ".colorize(:red) + "to to the dinner menu or" + " exit ".colorize(:red) + "to access the main menu.".colorize(:light_blue)
+                puts "Type".colorize(:light_blue) + " back ".colorize(:red) + "to to the breakfast menu or" + " exit ".colorize(:red) + "to access the main menu.".colorize(:light_blue)
                 puts " "
                 self.breakfast_recipes
             when "2"
@@ -89,61 +89,79 @@ class CLI
                 puts "Ingredients:".colorize(:green) + " #{ingredients[0]}"
                 puts "Recipe Link:".colorize(:green) + " #{recipe_url[0]}"
                 puts " "
-                puts "Type back to go back to the breakfast menu, or exit to access the main menu".colorize(:light_blue)
+                puts "Type".colorize(:light_blue) + " back ".colorize(:red) + "to to the breakfast menu or" + " exit ".colorize(:red) + "to access the main menu.".colorize(:light_blue)
                 puts " "
             when "2"
                 puts " "
-                puts "Recipe Name: #{recipes[1][3..-1]}"
-                puts ingredients[1]
-                puts recipe_url[1]
+                puts "Recipe Name:".colorize(:green) + " #{recipes[1][3..-1]}"
+                puts "Ingredients:".colorize(:green) + " #{ingredients[1]}"
+                puts "Recipe Link:".colorize(:green) + " #{recipe_url[1]}"
+                puts " "
+                puts "Type".colorize(:light_blue) + " back ".colorize(:red) + "to to the breakfast menu or" + " exit ".colorize(:red) + "to access the main menu.".colorize(:light_blue)
                 puts " "
             when "3"
                 puts " "
-                puts "Recipe Name: #{recipes[2][3..-1]}"
-                puts ingredients[2]
-                puts recipe_url[2]
+                puts "Recipe Name:".colorize(:green) + " #{recipes[2][3..-1]}"
+                puts "Ingredients:".colorize(:green) + " #{ingredients[2]}"
+                puts "Recipe Link:".colorize(:green) + " #{recipe_url[2]}"
+                puts " "
+                puts "Type".colorize(:light_blue) + " back ".colorize(:red) + "to to the breakfast menu or" + " exit ".colorize(:red) + "to access the main menu.".colorize(:light_blue)
                 puts " "
             when "4"
                 puts " "
-                puts "Recipe Name: #{recipes[3][3..-1]}"
-                puts ingredients[3]
-                puts recipe_url[3]
+                puts "Recipe Name:".colorize(:green) + " #{recipes[3][3..-1]}"
+                puts "Ingredients:".colorize(:green) + " #{ingredients[3]}"
+                puts "Recipe Link:".colorize(:green) + " #{recipe_url[3]}"
+                puts " "
+                puts "Type".colorize(:light_blue) + " back ".colorize(:red) + "to to the breakfast menu or" + " exit ".colorize(:red) + "to access the main menu.".colorize(:light_blue)
                 puts " "
             when "5"
                 puts " "
-                puts "Recipe Name: #{recipes[4][3..-1]}"
-                puts ingredients[4]
-                puts recipe_url[4]
+                puts "Recipe Name:".colorize(:green) + " #{recipes[4][3..-1]}"
+                puts "Ingredients:".colorize(:green) + " #{ingredients[4]}"
+                puts "Recipe Link:".colorize(:green) + " #{recipe_url[4]}"
+                puts " "
+                puts "Type".colorize(:light_blue) + " back ".colorize(:red) + "to to the breakfast menu or" + " exit ".colorize(:red) + "to access the main menu.".colorize(:light_blue)
                 puts " "
             when "6"
                 puts " "
-                puts "Recipe Name: #{recipes[5][3..-1]}"
-                puts ingredients[5]
-                puts recipe_url[5]
+                puts "Recipe Name:".colorize(:green) + " #{recipes[5][3..-1]}"
+                puts "Ingredients:".colorize(:green) + " #{ingredients[5]}"
+                puts "Recipe Link:".colorize(:green) + " #{recipe_url[5]}"
+                puts " "
+                puts "Type".colorize(:light_blue) + " back ".colorize(:red) + "to to the breakfast menu or" + " exit ".colorize(:red) + "to access the main menu.".colorize(:light_blue)
                 puts " "
             when "7"
                 puts " "
-                puts "Recipe Name: #{recipes[6][3..-1]}"
-                puts ingredients[6]
-                puts recipe_url[6]
+                puts "Recipe Name:".colorize(:green) + " #{recipes[6][3..-1]}"
+                puts "Ingredients:".colorize(:green) + " #{ingredients[6]}"
+                puts "Recipe Link:".colorize(:green) + " #{recipe_url[6]}"
+                puts " "
+                puts "Type".colorize(:light_blue) + " back ".colorize(:red) + "to to the breakfast menu or" + " exit ".colorize(:red) + "to access the main menu.".colorize(:light_blue)
                 puts " "
             when "8"
                 puts " "
-                puts "Recipe Name: #{recipes[7][3..-1]}"
-                puts ingredients[7]
-                puts recipe_url[7]
+                puts "Recipe Name:".colorize(:green) + " #{recipes[7][3..-1]}"
+                puts "Ingredients:".colorize(:green) + " #{ingredients[7]}"
+                puts "Recipe Link:".colorize(:green) + " #{recipe_url[7]}"
+                puts " "
+                puts "Type".colorize(:light_blue) + " back ".colorize(:red) + "to to the breakfast menu or" + " exit ".colorize(:red) + "to access the main menu.".colorize(:light_blue)
                 puts " "
             when "9"
                 puts " "
-                puts "Recipe Name: #{recipes[8][3..-1]}"
-                puts ingredients[8]
-                puts recipe_url[8]
+                puts "Recipe Name:".colorize(:green) + " #{recipes[8][3..-1]}"
+                puts "Ingredients:".colorize(:green) + " #{ingredients[8]}"
+                puts "Recipe Link:".colorize(:green) + " #{recipe_url[8]}"
+                puts " "
+                puts "Type".colorize(:light_blue) + " back ".colorize(:red) + "to to the breakfast menu or" + " exit ".colorize(:red) + "to access the main menu.".colorize(:light_blue)
                 puts " "
             when "10"
                 puts " "
-                puts "Recipe Name: #{recipes[9][3..-1]}"
-                puts ingredients[9]
-                puts recipe_url[9]
+                puts "Recipe Name:".colorize(:green) + " #{recipes[9][3..-1]}"
+                puts "Ingredients:".colorize(:green) + " #{ingredients[9]}"
+                puts "Recipe Link:".colorize(:green) + " #{recipe_url[9]}"
+                puts " "
+                puts "Type".colorize(:light_blue) + " back ".colorize(:red) + "to to the breakfast menu or" + " exit ".colorize(:red) + "to access the main menu.".colorize(:light_blue)
                 puts " "
             end
         end
@@ -178,63 +196,83 @@ class CLI
             case lunch_input
             when "1"
                 puts " "
-                puts "Recipe Name: #{recipes[0][3..-1]}"
-                puts ingredients[0]
-                puts recipe_url[0]
+                puts "Recipe Name:".colorize(:green) + " #{recipes[0][3..-1]}"
+                puts "Ingredients:".colorize(:green) + " #{ingredients[0]}"
+                puts "Recipe Link:".colorize(:green) + " #{recipe_url[0]}"
+                puts " "
+                puts "Type".colorize(:light_blue) + " back ".colorize(:red) + "to to the lunch menu or" + " exit ".colorize(:red) + "to access the main menu.".colorize(:light_blue)
                 puts " "
             when "2"
                 puts " "
-                puts "Recipe Name: #{recipes[1][3..-1]}"
-                puts ingredients[1]
-                puts recipe_url[1]
+                puts "Recipe Name:".colorize(:green) + " #{recipes[1][3..-1]}"
+                puts "Ingredients:".colorize(:green) + " #{ingredients[1]}"
+                puts "Recipe Link:".colorize(:green) + " #{recipe_url[1]}"
+                puts " "
+                puts "Type".colorize(:light_blue) + " back ".colorize(:red) + "to to the lunch menu or" + " exit ".colorize(:red) + "to access the main menu.".colorize(:light_blue)
                 puts " "
             when "3"
                 puts " "
-                puts "Recipe Name: #{recipes[2][3..-1]}"
-                puts ingredients[2]
-                puts recipe_url[2]
+                puts "Recipe Name:".colorize(:green) + " #{recipes[2][3..-1]}"
+                puts "Ingredients:".colorize(:green) + " #{ingredients[2]}"
+                puts "Recipe Link:".colorize(:green) + " #{recipe_url[2]}"
+                puts " "
+                puts "Type".colorize(:light_blue) + " back ".colorize(:red) + "to to the lunch menu or" + " exit ".colorize(:red) + "to access the main menu.".colorize(:light_blue)
                 puts " "
             when "4"
                 puts " "
-                puts "Recipe Name: #{recipes[3][3..-1]}"
-                puts ingredients[3]
-                puts recipe_url[3]
+                puts "Recipe Name:".colorize(:green) + " #{recipes[3][3..-1]}"
+                puts "Ingredients:".colorize(:green) + " #{ingredients[3]}"
+                puts "Recipe Link:".colorize(:green) + " #{recipe_url[3]}"
+                puts " "
+                puts "Type".colorize(:light_blue) + " back ".colorize(:red) + "to to the lunch menu or" + " exit ".colorize(:red) + "to access the main menu.".colorize(:light_blue)
                 puts " "
             when "5"
                 puts " "
-                puts "Recipe Name: #{recipes[4][3..-1]}"
-                puts ingredients[4]
-                puts recipe_url[4]
+                puts "Recipe Name:".colorize(:green) + " #{recipes[4][3..-1]}"
+                puts "Ingredients:".colorize(:green) + " #{ingredients[4]}"
+                puts "Recipe Link:".colorize(:green) + " #{recipe_url[4]}"
+                puts " "
+                puts "Type".colorize(:light_blue) + " back ".colorize(:red) + "to to the lunch menu or" + " exit ".colorize(:red) + "to access the main menu.".colorize(:light_blue)
                 puts " "
             when "6"
                 puts " "
-                puts "Recipe Name: #{recipes[5][3..-1]}"
-                puts ingredients[5]
-                puts recipe_url[5]
+                puts "Recipe Name:".colorize(:green) + " #{recipes[5][3..-1]}"
+                puts "Ingredients:".colorize(:green) + " #{ingredients[5]}"
+                puts "Recipe Link:".colorize(:green) + " #{recipe_url[5]}"
+                puts " "
+                puts "Type".colorize(:light_blue) + " back ".colorize(:red) + "to to the lunch menu or" + " exit ".colorize(:red) + "to access the main menu.".colorize(:light_blue)
                 puts " "
             when "7"
                 puts " "
-                puts "Recipe Name: #{recipes[6][3..-1]}"
-                puts ingredients[6]
-                puts recipe_url[6]
+                puts "Recipe Name:".colorize(:green) + " #{recipes[6][3..-1]}"
+                puts "Ingredients:".colorize(:green) + " #{ingredients[6]}"
+                puts "Recipe Link:".colorize(:green) + " #{recipe_url[6]}"
+                puts " "
+                puts "Type".colorize(:light_blue) + " back ".colorize(:red) + "to to the lunch menu or" + " exit ".colorize(:red) + "to access the main menu.".colorize(:light_blue)
                 puts " "
             when "8"
                 puts " "
-                puts "Recipe Name: #{recipes[7][3..-1]}"
-                puts ingredients[7]
-                puts recipe_url[7]
+                puts "Recipe Name:".colorize(:green) + " #{recipes[7][3..-1]}"
+                puts "Ingredients:".colorize(:green) + " #{ingredients[7]}"
+                puts "Recipe Link:".colorize(:green) + " #{recipe_url[7]}"
+                puts " "
+                puts "Type".colorize(:light_blue) + " back ".colorize(:red) + "to to the lunch menu or" + " exit ".colorize(:red) + "to access the main menu.".colorize(:light_blue)
                 puts " "
             when "9"
                 puts " "
-                puts "Recipe Name: #{recipes[8][3..-1]}"
-                puts ingredients[8]
-                puts recipe_url[8]
+                puts "Recipe Name:".colorize(:green) + " #{recipes[8][3..-1]}"
+                puts "Ingredients:".colorize(:green) + " #{ingredients[8]}"
+                puts "Recipe Link:".colorize(:green) + " #{recipe_url[8]}"
+                puts " "
+                puts "Type".colorize(:light_blue) + " back ".colorize(:red) + "to to the lunch menu or" + " exit ".colorize(:red) + "to access the main menu.".colorize(:light_blue)
                 puts " "
             when "10"
                 puts " "
-                puts "Recipe Name: #{recipes[9][3..-1]}"
-                puts ingredients[9]
-                puts recipe_url[9]
+                puts "Recipe Name:".colorize(:green) + " #{recipes[9][3..-1]}"
+                puts "Ingredients:".colorize(:green) + " #{ingredients[9]}"
+                puts "Recipe Link:".colorize(:green) + " #{recipe_url[9]}"
+                puts " "
+                puts "Type".colorize(:light_blue) + " back ".colorize(:red) + "to to the lunch menu or" + " exit ".colorize(:red) + "to access the main menu.".colorize(:light_blue)
                 puts " "
             end
         end
@@ -269,63 +307,83 @@ class CLI
             case dinner_input
             when "1"
                 puts " "
-                puts "Recipe Name: #{recipes[0][3..-1]}"
-                puts ingredients[0]
-                puts recipe_url[0]
+                puts "Recipe Name:".colorize(:green) + " #{recipes[0][3..-1]}"
+                puts "Ingredients:".colorize(:green) + " #{ingredients[0]}"
+                puts "Recipe Link:".colorize(:green) + " #{recipe_url[0]}"
+                puts " "
+                puts "Type".colorize(:light_blue) + " back ".colorize(:red) + "to to the dinner menu or" + " exit ".colorize(:red) + "to access the main menu.".colorize(:light_blue)
                 puts " "
             when "2"
                 puts " "
-                puts "Recipe Name: #{recipes[1][3..-1]}"
-                puts ingredients[1]
-                puts recipe_url[1]
+                puts "Recipe Name:".colorize(:green) + " #{recipes[1][3..-1]}"
+                puts "Ingredients:".colorize(:green) + " #{ingredients[1]}"
+                puts "Recipe Link:".colorize(:green) + " #{recipe_url[1]}"
+                puts " "
+                puts "Type".colorize(:light_blue) + " back ".colorize(:red) + "to to the dinner menu or" + " exit ".colorize(:red) + "to access the main menu.".colorize(:light_blue)
                 puts " "
             when "3"
                 puts " "
-                puts "Recipe Name: #{recipes[2][3..-1]}"
-                puts ingredients[2]
-                puts recipe_url[2]
+                puts "Recipe Name:".colorize(:green) + " #{recipes[2][3..-1]}"
+                puts "Ingredients:".colorize(:green) + " #{ingredients[2]}"
+                puts "Recipe Link:".colorize(:green) + " #{recipe_url[2]}"
+                puts " "
+                puts "Type".colorize(:light_blue) + " back ".colorize(:red) + "to to the dinner menu or" + " exit ".colorize(:red) + "to access the main menu.".colorize(:light_blue)
                 puts " "
             when "4"
                 puts " "
-                puts "Recipe Name: #{recipes[3][3..-1]}"
-                puts ingredients[3]
-                puts recipe_url[3]
+                puts "Recipe Name:".colorize(:green) + " #{recipes[3][3..-1]}"
+                puts "Ingredients:".colorize(:green) + " #{ingredients[3]}"
+                puts "Recipe Link:".colorize(:green) + " #{recipe_url[3]}"
+                puts " "
+                puts "Type".colorize(:light_blue) + " back ".colorize(:red) + "to to the dinner menu or" + " exit ".colorize(:red) + "to access the main menu.".colorize(:light_blue)
                 puts " "
             when "5"
                 puts " "
-                puts "Recipe Name: #{recipes[4][3..-1]}"
-                puts ingredients[4]
-                puts recipe_url[4]
+                puts "Recipe Name:".colorize(:green) + " #{recipes[4][3..-1]}"
+                puts "Ingredients:".colorize(:green) + " #{ingredients[4]}"
+                puts "Recipe Link:".colorize(:green) + " #{recipe_url[4]}"
+                puts " "
+                puts "Type".colorize(:light_blue) + " back ".colorize(:red) + "to to the dinner menu or" + " exit ".colorize(:red) + "to access the main menu.".colorize(:light_blue)
                 puts " "
             when "6"
                 puts " "
-                puts "Recipe Name: #{recipes[5][3..-1]}"
-                puts ingredients[5]
-                puts recipe_url[5]
+                puts "Recipe Name:".colorize(:green) + " #{recipes[5][3..-1]}"
+                puts "Ingredients:".colorize(:green) + " #{ingredients[5]}"
+                puts "Recipe Link:".colorize(:green) + " #{recipe_url[5]}"
+                puts " "
+                puts "Type".colorize(:light_blue) + " back ".colorize(:red) + "to to the dinner menu or" + " exit ".colorize(:red) + "to access the main menu.".colorize(:light_blue)
                 puts " "
             when "7"
                 puts " "
-                puts "Recipe Name: #{recipes[6][3..-1]}"
-                puts ingredients[6]
-                puts recipe_url[6]
+                puts "Recipe Name:".colorize(:green) + " #{recipes[6][3..-1]}"
+                puts "Ingredients:".colorize(:green) + " #{ingredients[6]}"
+                puts "Recipe Link:".colorize(:green) + " #{recipe_url[6]}"
+                puts " "
+                puts "Type".colorize(:light_blue) + " back ".colorize(:red) + "to to the dinner menu or" + " exit ".colorize(:red) + "to access the main menu.".colorize(:light_blue)
                 puts " "
             when "8"
                 puts " "
-                puts "Recipe Name: #{recipes[7][3..-1]}"
-                puts ingredients[7]
-                puts recipe_url[7]
+                puts "Recipe Name:".colorize(:green) + " #{recipes[7][3..-1]}"
+                puts "Ingredients:".colorize(:green) + " #{ingredients[7]}"
+                puts "Recipe Link:".colorize(:green) + " #{recipe_url[7]}"
+                puts " "
+                puts "Type".colorize(:light_blue) + " back ".colorize(:red) + "to to the dinner menu or" + " exit ".colorize(:red) + "to access the main menu.".colorize(:light_blue)
                 puts " "
             when "9"
                 puts " "
-                puts "Recipe Name: #{recipes[8][3..-1]}"
-                puts ingredients[8]
-                puts recipe_url[8]
+                puts "Recipe Name:".colorize(:green) + " #{recipes[8][3..-1]}"
+                puts "Ingredients:".colorize(:green) + " #{ingredients[8]}"
+                puts "Recipe Link:".colorize(:green) + " #{recipe_url[8]}"
+                puts " "
+                puts "Type".colorize(:light_blue) + " back ".colorize(:red) + "to to the dinner menu or" + " exit ".colorize(:red) + "to access the main menu.".colorize(:light_blue)
                 puts " "
             when "10"
                 puts " "
-                puts "Recipe Name: #{recipes[9][3..-1]}"
-                puts ingredients[9]
-                puts recipe_url[9]
+                puts "Recipe Name:".colorize(:green) + " #{recipes[9][3..-1]}"
+                puts "Ingredients:".colorize(:green) + " #{ingredients[9]}"
+                puts "Recipe Link:".colorize(:green) + " #{recipe_url[9]}"
+                puts " "
+                puts "Type".colorize(:light_blue) + " back ".colorize(:red) + "to to the dinner menu or" + " exit ".colorize(:red) + "to access the main menu.".colorize(:light_blue)
                 puts " "
             end
         end
@@ -360,63 +418,83 @@ class CLI
             case snack_input
             when "1"
                 puts " "
-                puts "Recipe Name: #{recipes[0][3..-1]}"
-                puts ingredients[0]
-                puts recipe_url[0]
+                puts "Recipe Name:".colorize(:green) + " #{recipes[0][3..-1]}"
+                puts "Ingredients:".colorize(:green) + " #{ingredients[0]}"
+                puts "Recipe Link:".colorize(:green) + " #{recipe_url[0]}"
+                puts " "
+                puts "Type".colorize(:light_blue) + " back ".colorize(:red) + "to to the snack menu or" + " exit ".colorize(:red) + "to access the main menu.".colorize(:light_blue)
                 puts " "
             when "2"
                 puts " "
-                puts "Recipe Name: #{recipes[1][3..-1]}"
-                puts ingredients[1]
-                puts recipe_url[1]
+                puts "Recipe Name:".colorize(:green) + " #{recipes[1][3..-1]}"
+                puts "Ingredients:".colorize(:green) + " #{ingredients[1]}"
+                puts "Recipe Link:".colorize(:green) + " #{recipe_url[1]}"
+                puts " "
+                puts "Type".colorize(:light_blue) + " back ".colorize(:red) + "to to the snack menu or" + " exit ".colorize(:red) + "to access the main menu.".colorize(:light_blue)
                 puts " "
             when "3"
                 puts " "
-                puts "Recipe Name: #{recipes[2][3..-1]}"
-                puts ingredients[2]
-                puts recipe_url[2]
+                puts "Recipe Name:".colorize(:green) + " #{recipes[2][3..-1]}"
+                puts "Ingredients:".colorize(:green) + " #{ingredients[2]}"
+                puts "Recipe Link:".colorize(:green) + " #{recipe_url[2]}"
+                puts " "
+                puts "Type".colorize(:light_blue) + " back ".colorize(:red) + "to to the snack menu or" + " exit ".colorize(:red) + "to access the main menu.".colorize(:light_blue)
                 puts " "
             when "4"
                 puts " "
-                puts "Recipe Name: #{recipes[3][3..-1]}"
-                puts ingredients[3]
-                puts recipe_url[3]
+                puts "Recipe Name:".colorize(:green) + " #{recipes[3][3..-1]}"
+                puts "Ingredients:".colorize(:green) + " #{ingredients[3]}"
+                puts "Recipe Link:".colorize(:green) + " #{recipe_url[3]}"
+                puts " "
+                puts "Type".colorize(:light_blue) + " back ".colorize(:red) + "to to the snack menu or" + " exit ".colorize(:red) + "to access the main menu.".colorize(:light_blue)
                 puts " "
             when "5"
                 puts " "
-                puts "Recipe Name: #{recipes[4][3..-1]}"
-                puts ingredients[4]
-                puts recipe_url[4]
+                puts "Recipe Name:".colorize(:green) + " #{recipes[4][3..-1]}"
+                puts "Ingredients:".colorize(:green) + " #{ingredients[4]}"
+                puts "Recipe Link:".colorize(:green) + " #{recipe_url[4]}"
+                puts " "
+                puts "Type".colorize(:light_blue) + " back ".colorize(:red) + "to to the snack menu or" + " exit ".colorize(:red) + "to access the main menu.".colorize(:light_blue)
                 puts " "
             when "6"
                 puts " "
-                puts "Recipe Name: #{recipes[5][3..-1]}"
-                puts ingredients[5]
-                puts recipe_url[5]
+                puts "Recipe Name:".colorize(:green) + " #{recipes[5][3..-1]}"
+                puts "Ingredients:".colorize(:green) + " #{ingredients[5]}"
+                puts "Recipe Link:".colorize(:green) + " #{recipe_url[5]}"
+                puts " "
+                puts "Type".colorize(:light_blue) + " back ".colorize(:red) + "to to the snack menu or" + " exit ".colorize(:red) + "to access the main menu.".colorize(:light_blue)
                 puts " "
             when "7"
                 puts " "
-                puts "Recipe Name: #{recipes[6][3..-1]}"
-                puts ingredients[6]
-                puts recipe_url[6]
+                puts "Recipe Name:".colorize(:green) + " #{recipes[6][3..-1]}"
+                puts "Ingredients:".colorize(:green) + " #{ingredients[6]}"
+                puts "Recipe Link:".colorize(:green) + " #{recipe_url[6]}"
+                puts " "
+                puts "Type".colorize(:light_blue) + " back ".colorize(:red) + "to to the snack menu or" + " exit ".colorize(:red) + "to access the main menu.".colorize(:light_blue)
                 puts " "
             when "8"
                 puts " "
-                puts "Recipe Name: #{recipes[7][3..-1]}"
-                puts ingredients[7]
-                puts recipe_url[7]
+                puts "Recipe Name:".colorize(:green) + " #{recipes[7][3..-1]}"
+                puts "Ingredients:".colorize(:green) + " #{ingredients[7]}"
+                puts "Recipe Link:".colorize(:green) + " #{recipe_url[7]}"
+                puts " "
+                puts "Type".colorize(:light_blue) + " back ".colorize(:red) + "to to the snack menu or" + " exit ".colorize(:red) + "to access the main menu.".colorize(:light_blue)
                 puts " "
             when "9"
                 puts " "
-                puts "Recipe Name: #{recipes[8][3..-1]}"
-                puts ingredients[8]
-                puts recipe_url[8]
+                puts "Recipe Name:".colorize(:green) + " #{recipes[8][3..-1]}"
+                puts "Ingredients:".colorize(:green) + " #{ingredients[8]}"
+                puts "Recipe Link:".colorize(:green) + " #{recipe_url[8]}"
+                puts " "
+                puts "Type".colorize(:light_blue) + " back ".colorize(:red) + "to to the snack menu or" + " exit ".colorize(:red) + "to access the main menu.".colorize(:light_blue)
                 puts " "
             when "10"
                 puts " "
-                puts "Recipe Name: #{recipes[9][3..-1]}"
-                puts ingredients[9]
-                puts recipe_url[9]
+                puts "Recipe Name:".colorize(:green) + " #{recipes[9][3..-1]}"
+                puts "Ingredients:".colorize(:green) + " #{ingredients[9]}"
+                puts "Recipe Link:".colorize(:green) + " #{recipe_url[9]}"
+                puts " "
+                puts "Type".colorize(:light_blue) + " back ".colorize(:red) + "to to the snack menu or" + " exit ".colorize(:red) + "to access the main menu.".colorize(:light_blue)
                 puts " "
             end
         end
