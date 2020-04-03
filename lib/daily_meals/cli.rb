@@ -60,21 +60,22 @@ class CLI
 
     def eating_time_details
         input = nil
-            input = gets.strip
-            if input.to_i >= 11
-                puts " "
-                puts "That's not a valid command. Enter 1-10 to select a meal.".colorize(:red)
-                puts " "
-            elsif input == "menu"
-                self.main_menu
-            else
-                index = (input.to_i - 1)
-                @user_selected_meal_object = @meals[index]
-                Meal.meal_detail_display(@meals[index])
-                puts "Type".colorize(:light_blue) + " 'menu' ".colorize(:red) + "to select a different meal category. Type".colorize(:light_blue) + " 'meal' ".colorize(:red) + "to view another recipe.".colorize(:light_blue)
-                puts " "
-                @meals = nil
-            end
+        input = gets.strip
+        if input.to_i >= 11
+            puts " "
+            puts "That's not a valid command. Enter 1-10 to select a meal.".colorize(:red)
+            puts " "
+            self.eating_time_details
+        elsif input == "menu"
+            self.main_menu
+        else
+            index = (input.to_i - 1)
+            @user_selected_meal_object = @meals[index]
+            Meal.meal_detail_display(@meals[index])
+            puts "Type".colorize(:light_blue) + " 'menu' ".colorize(:red) + "to select a different meal category. Type".colorize(:light_blue) + " 'meal' ".colorize(:red) + "to view another recipe.".colorize(:light_blue)
+            puts " "
+            @meals = nil
+        end
     end
 
     def intro_display
