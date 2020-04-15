@@ -33,5 +33,4 @@ class API
         data_collect.each{|hash| Meal.new('snack', hash)}
     end
 
-
 end
