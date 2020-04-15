@@ -4,13 +4,13 @@ Welcome to your Daily Meals! Daily Meals gives you a list of meals to choose fro
 
 ## Installation
 
-1. Open your terminal and clone down my repository
+1. Open your terminal and clone down my repository and install the following gems:
 
-2. Install the following gems:
-
-   $ gem install httparty
-    $ gem install pry
-   \$ gem install colorize
+```
+$ gem install httparty
+$ gem install pry
+$ gem install colorize
+```
 
 ## Usage
 
