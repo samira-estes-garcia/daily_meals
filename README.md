@@ -1,26 +1,20 @@
 # Daily Meals
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. To run this code type in `./bin.run`
+Welcome to your Daily Meals! Daily Meals gives you a list of meals to choose from so you don't have to scour the web for your next meal. Daily Meals will give you a list of ingredients and a link to the recipe and suddenly, cooking just got a little easier!
 
 ## Installation
 
-Add this line to your application's Gemfile:
+1. Open your terminal and clone down my repository
 
-```ruby
-gem 'daily_meals'
-```
+2. Install the following gems:
 
-And then execute:
-
-    $ bundle install
-
-Or install it yourself as:
-
-    $ gem install daily_meals
+   $ gem install httparty
+    $ gem install pry
+   \$ gem install colorize
 
 ## Usage
 
-Type the below and follow the on screen prompts.
+Once you have installed all the necessary gems, type the below and follow the on screen prompts.
 
 ```
 $ ./bin/run
