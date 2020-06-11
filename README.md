@@ -9,6 +9,7 @@ Open your terminal and clone down my repository and install the following gems:
 ```
 $ gem install httparty
 $ gem install pry
+$ gem install pry-byebug
 $ gem install colorize
 ```
 
